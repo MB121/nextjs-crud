@@ -13,6 +13,27 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontSize: Object.fromEntries(
+        Array(100)
+          .fill(0)
+          .map((_, i) => [i + 1, `${i + 1}px`])
+      ),
+      height: Object.fromEntries(
+        Array(100)
+          .fill(0)
+          .map((_, i) => [i + 1, `${i + 1}px`])
+      ),
+      spacing: Object.fromEntries(
+        Array(100)
+          .fill(0)
+          .map((_, i) => [i + 1, `${i + 1}px`])
+      ),
+      colors: {
+        primary: "#226ed5",
+        sky: "#00dff4",
+        lightgreen: "#48bbb4",
+        darkgreen: "#31a39b",
+      },
     },
   },
   plugins: [],
